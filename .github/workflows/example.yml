@@ -1,0 +1,10 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  example_job:
+    runs-on: base-runner-enterprise
+    steps:
+      - name: Run a one-liner script
+        run: |
+          echo This workflow was manually triggered by: "${{ github.actor }}"
