@@ -3,7 +3,7 @@ on:
 
 jobs:
   example_job:
-    runs-on: base-runner-enterprise
+    runs-on: ubuntu-latest
     steps:
       - name: Run a one-liner script
         run: |
